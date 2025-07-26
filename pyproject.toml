@@ -1,0 +1,7 @@
+[project]
+name = "lazy-uploader"
+version = "0.1.0"
+description = "Simple file uploader with periodic polling to check upload status."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
