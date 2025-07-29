@@ -14,7 +14,6 @@ class FileStatus(StrEnum):
 
 class File(BaseModel):
     id: UUID4
-    name: str
     url: HttpUrl
     status: FileStatus
     created_at: datetime

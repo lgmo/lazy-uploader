@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import UTC, datetime
 import os
 from uuid import uuid4
 
@@ -13,7 +13,7 @@ class FileCreateSchema(BaseModel):
     content: bytes
 
     def to_entity(self) -> File:
-        now = datetime.now()
+        now = datetime.now(UTC)
         settings = get_settings()
         final_name, extension = os.path.splitext(self.name)
         file_id = uuid4()
